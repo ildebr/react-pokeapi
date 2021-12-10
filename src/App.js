@@ -11,9 +11,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/">
-          <Route  element={<Pokeapi />} />
+          <Route path="pokemon"  element={<Pokeapi />} />
           <Route path=":pokeName" element={<Pokedetail />} />
-          <Route index path="landing" element={<Landing />} />
+          <Route index  element={<Landing />} />
         </Route>
       </Routes>
     </BrowserRouter>
