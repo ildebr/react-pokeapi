@@ -1,0 +1,34 @@
+<div>
+                  {blogs.results.map(poke =>{
+                      return <section>
+                        <h2>{poke.name}</h2>
+                        <h2>{poke.url}</h2>
+                        
+                        </section>
+                    })}
+                    <p>Maldita sea</p>
+                    {blogs.results[2].name}
+                </div>
+
+<div class="uno">
+        { isPending && <div>Loading...</div>}
+            { error && <div>{error}</div>}
+            { blog && (
+                <article>
+
+                    <h2>{blog.name}</h2>
+                    <h3>{blog.sprites.other.dream_world.front_default}</h3>
+                    <img src={blog.sprites.other.dream_world.front_default} />
+                    { blog.types.map(type => {
+                      return <h1>{type.type.name}</h1>
+                        })
+                    }
+                    {
+                      blog.abilities[0].ability.name
+                    }
+                    {blog.abilities.length}
+
+                    
+                </article>
+            )}
+      </div>

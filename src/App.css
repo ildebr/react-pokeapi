@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -34,5 +38,90 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+body{
+  background-image: url("img/pattern.png");
+  background-size: 200px;
+
+}
+
+.Pokeapi{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+.pokemon-results{
+  grid-gap: 1rem;
+}
+
+.pokemon-results .card{
+  margin: 0 auto;
+}
+
+.no-display{
+  display: none;
+}
+
+
+.Pokeapi > header{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: wheat;
+}
+
+.fetch-section{
+  padding: 1rem;
+  background-color: #ffffff87;
+}
+
+.buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: .1rem 0 1.25rem;
+}
+
+.busqueda-section{
+  display: none;
+}
+.busqueda-section.mostrar{
+  display: block;
+}
+
+.busqueda .card{
+  margin: 0 auto;
+}
+
+.pokemon-results .card{
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width:600px){
+  .pokemon-results{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .pokemon-results .card{
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width:900px){
+  .pokemon-results{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .pokemon-results .card{
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width:1150px){
+  .pokemon-results{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

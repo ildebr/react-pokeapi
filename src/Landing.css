@@ -1,0 +1,24 @@
+.landing-header{
+    min-height: 100vh;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.landing-text{
+    text-align: center;
+    padding: 2rem;
+    max-width: 550px;
+}
+
+.landing-link{
+    padding:1rem 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+}
