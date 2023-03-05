@@ -117,8 +117,8 @@ function Pokeapi() {
 
   return (
     <div className="Pokeapi">
-      <Link to={`?page=${Number(page)-1}`}  > Previous </Link>
-      <Link to={`?page=${Number(page)+1}`} > Next </Link>
+      
+      
       <header>
       <h2>Pokepi</h2>
 
@@ -126,7 +126,8 @@ function Pokeapi() {
         <input type="search"
         placeholder="Search Pokemon"
         value={searchTerm}
-        onChange={handleOnChange} />
+        onChange={handleOnChange}
+        className="search" />
         <button>Search</button>
       </form>
       </header>
@@ -150,8 +151,8 @@ function Pokeapi() {
             { pokeresults && (
               <section className="fetch-section ">
                 <div className="buttons">
-                  <button onClick={handlePrev}>Previous page</button>
-                  <button onClick={handleNext}>Next page</button>
+                <Link to={`?page=${Number(page)-1}`}  > Previous </Link>
+                <Link to={`?page=${Number(page)+1}`} > Next </Link>
                 </div>
                 <section className="pokemon-results">
                   

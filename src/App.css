@@ -86,6 +86,21 @@ body{
   margin: .1rem 0 1.25rem;
 }
 
+.buttons a{
+  background-color : wheat;
+  color: white;
+  padding: .25rem 1rem;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 800;
+}
+
+.search{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
 .busqueda-section{
   display: none;
 }
@@ -125,3 +140,4 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
