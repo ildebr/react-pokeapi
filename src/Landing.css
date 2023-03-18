@@ -41,6 +41,7 @@
 .landing-img{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .landing-link:after{
