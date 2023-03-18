@@ -12,13 +12,57 @@
     text-align: center;
     padding: 2rem;
     max-width: 550px;
+
+    color: white;
+}
+
+.landing-text h2{
+    font-size: 3rem;
+}
+
+.landing-text p{
+    color: #ddd;
 }
 
 .landing-link{
     padding:1rem 2rem;
     margin-top: 1rem;
     display: inline-block;
-    background-color: red;
+    position: relative;
+    background-color: #fee251;
+    color: black;
+    font-weight: 800;
     text-decoration: none;
-    color: white;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(226, 20, 20, 0.6);
+    
+}
+
+.landing-img{
+    display: flex;
+    align-items: center;
+}
+
+.landing-link:after{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    box-shadow: inset 2px 2px 2px 0px rgba(153, 153, 153, 0.405), inset -2px -2px 2px 0 rgba(0, 0, 0, 0.7);
+    z-index: 0;
+  
+}
+
+@media (min-width: 900px){
+    .landing-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .landing-text{
+        text-align: left;
+    }
 }
