@@ -80,3 +80,12 @@
 .story-section{
     background-color: white;
 }
+
+.card{
+    transition: .2s ease;
+}
+
+.card:hover{
+    transition: .2s ease;
+    transform: scale(1.05);
+}
