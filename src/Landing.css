@@ -1,6 +1,8 @@
 .landing-header{
     min-height: 100vh;
     max-height: 800px;
+    max-width: 1700px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,4 +68,15 @@
     .landing-text{
         text-align: left;
     }
+}
+
+
+.section-container{
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.story-section{
+    background-color: white;
 }

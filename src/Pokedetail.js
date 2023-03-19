@@ -21,7 +21,8 @@ export default function Pokedetail(){
       }
     
     useFetch('https://pokeapi.co/api/v2/evolution-chain/2/')
-
+    console.log(pokemon)
+    console.log(especies)
     return (
         <main>
             

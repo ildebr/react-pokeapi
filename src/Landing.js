@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import Circle from "./Circle"
 import "./Landing.css"
 import Pokeball from "./Pokeball"
+import PokemonStory from "./PokemonStory/PokemonStory"
 export default function Landing(){
 
     
@@ -28,6 +29,14 @@ export default function Landing(){
 
                 
             </header>
+
+            <section className="story-section">
+                <div className="section-container">
+                <h2>Pokemon History</h2>
+                <p>In April 1998, Pokémon Center Co., Ltd. is established by the original authors of Pokémon: Nintendo Co., Ltd., Creatures Inc. and GAME FREAK Inc. The company name was changed to The Pokémon Company in October 2000. Since then, our business activities have expanded to overall management of the Pokémon brand.</p>
+                <PokemonStory />
+                </div>
+            </section>
         </>
     )
 }

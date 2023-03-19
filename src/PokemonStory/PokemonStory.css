@@ -1,0 +1,41 @@
+.story-container{
+    border-left: 2px solid #d8d8d8;
+}
+
+
+.story{
+    position: relative;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    opacity: 0;
+	transition: 1s ease;
+	filter: blur(5px);
+	transform: translateY(50%);
+
+}
+
+.story.show{
+    
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0%);
+    
+}
+
+.story h3{
+    margin: 0;
+}
+
+.story::before{
+    content: '';
+    height: 15px;
+    left: 0;
+    transform: translateX(calc(-50% - 1px));
+    position: absolute;
+    width: 15px;
+    background-color: rgb(2, 2, 2);
+    border: 1px solid gray;
+    border-radius: 10px;
+}
