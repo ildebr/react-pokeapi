@@ -120,7 +120,11 @@ function Pokeapi() {
       
       
       <header>
-      <h2>Pokepi</h2>
+      <h2>
+        <Link to="/" className='header-link' >
+        Pokeapi
+        </Link>
+      </h2>
 
       <form onSubmit={handleOnSubmit}>
         <input type="search"
