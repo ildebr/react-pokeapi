@@ -23,6 +23,15 @@ export default function Pokedetail(){
     useFetch('https://pokeapi.co/api/v2/evolution-chain/2/')
     console.log(pokemon)
     console.log(especies)
+
+    const stats= {
+        hp:240,
+        attack:190,
+        defense:230,
+        specialattack:175,
+        specialdefense:230,
+        speed: 180
+    }
     return (
         <main>
             
@@ -61,6 +70,18 @@ export default function Pokedetail(){
 
                         <h2>Habitat</h2>
                         <p>{especies && especies.habitat.name}</p>
+
+                        <div className="stats-section">
+                            <h2>Stats</h2>
+                            <div className="stats">
+                                {
+                                    pokemon.stats.map((stat) => {
+                                        return <div className="stat"><p className="stat-text"><span>{stat.stat.name}</span> <span>{stat.base_stat}</span> </p> <input type="range" min="0" max={stats[stat.stat.name.replace('-','')]} value={stat.base_stat} /> </div>
+                                    })
+                                }
+                            </div>
+                        </div>
+                        
                         
 
                         <div className="moves-section">

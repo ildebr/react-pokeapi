@@ -95,3 +95,64 @@ p::first-letter{
         padding: 3rem;
     }
 }
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+    background: red;
+    height: 1rem;
+  }
+  
+  /******** Firefox ********/
+  input[type="range"]::-moz-range-track {
+    background: red;
+    height: 1rem;
+  }
+
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: 0; /* Centers thumb on the track */
+    background-color: white;
+    box-shadow: -407px 0 0 400px black;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;    
+ }
+
+ input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -12px; /* Centers thumb on the track */
+    background-color: white;
+    box-shadow: -407px 0 0 400px black;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;    
+ }
+
+ .stat-text{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+ }
+
+
+ @media (min-width:800px) {
+    .stats{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        row-gap: 1rem;
+    }
+ }
