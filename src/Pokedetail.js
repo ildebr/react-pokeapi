@@ -41,7 +41,10 @@ export default function Pokedetail(){
                 <main className="pokemon-detail">
                     <div className="visuals">
                         <div className="pokemon-detail-img-container">
-                        <img src={pokemon.sprites.other.dream_world.front_default} class="pokemon-detail-img" alt="pokemon" />
+                            <img src={pokemon.sprites.other.dream_world.front_default} class="pokemon-detail-img" alt="pokemon" />
+                        </div>
+                        <div className="poke-number">
+                            <span>{pokemon.order}</span>
                         </div>
                         <div className="pokemon-detail-types">
                         {pokemon.types.map((type) => {
