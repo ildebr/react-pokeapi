@@ -24,6 +24,7 @@ export default function Landing(){
                         
                         <p>For this page I made use of this API with React for learning purposes.</p>
                         <Link to="/pokemon" className="landing-link" >View the Pokedex</Link>
+                        <Link to="/guessThePokemon" className="landing-link" >Play the game</Link>
                     </div>
                 </div>
 

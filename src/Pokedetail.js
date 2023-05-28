@@ -32,6 +32,9 @@ export default function Pokedetail(){
         specialdefense:230,
         speed: 180
     }
+
+
+   
     return (
         <main>
             
@@ -78,8 +81,13 @@ export default function Pokedetail(){
                             <h2>Stats</h2>
                             <div className="stats">
                                 {
-                                    pokemon.stats.map((stat) => {
-                                        return <div className="stat"><p className="stat-text"><span>{stat.stat.name}</span> <span>{stat.base_stat}</span> </p> <input type="range" min="0" max={stats[stat.stat.name.replace('-','')]} value={stat.base_stat} /> </div>
+                                    pokemon.stats.map((stat,index) => {
+                                        return <div className="stat">
+                                            <p className="stat-text">
+                                                <span>{stat.stat.name}</span> <span>{stat.base_stat}/{stats[stat.stat.name.replace('-','')]}</span> 
+                                            </p> 
+                                            <input type="range" data-id={index} min="0" max={stats[stat.stat.name.replace('-','')]} value={stat.base_stat} /> 
+                                            </div>
                                     })
                                 }
                             </div>

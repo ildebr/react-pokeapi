@@ -104,12 +104,14 @@ input[type="range"] {
     overflow: hidden;
     width: 100%;
     border-radius: 10px;
+    transition: 1s ease;
   }
 
   /***** Chrome, Safari, Opera, and Edge Chromium *****/
 input[type="range"]::-webkit-slider-runnable-track {
     background: red;
     height: 1rem;
+    transition: 1s ease;
   }
   
   /******** Firefox ********/
@@ -128,6 +130,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     border-radius: 50%;
     height: 1rem;
     width: 1rem;    
+    transition: 1s ease;
  }
 
  input[type="range"]::-moz-range-thumb {
@@ -173,6 +176,16 @@ input[type="range"]::-webkit-slider-runnable-track {
     transform: scale(20) translateX(15%) translateY(-80%);
  }
 
+ @media (max-width:850px){
+    .poke-number span{
+        transform: scale(20) translateX(15%) translateY(0%);
+    }
+ }
+
  .visuals{
     overflow: hidden;
+    border-bottom-left-radius: 116px;
+    border-bottom-right-radius: 116px;
  }
+
+ 
